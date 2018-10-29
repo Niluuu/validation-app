@@ -1,0 +1,98 @@
+.App {
+  text-align: center;
+  margin-top: -15%;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-title {
+  color: #ddd;
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+.input-container {
+  margin: 0;
+}
+
+.input-container input {
+  border:  1px solid #cacaca;
+  border-radius: 15px;
+  padding: 10px;
+  outline: none;
+}
+
+
+.input-container .email-input {
+  border-bottom: none;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.input-container .password-input {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  background: #63D5C3;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  outline: none;
+  cursor: pointer;
+}
+
+.error-row {
+  margin-top: -29px;
+  display: flex;
+  justify-content: flex-end; 
+  position: absolute;
+  left: 55%;
+}
+
+.error-row img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.error-row p {
+  height: 20px;
+  opacity: 0;
+  visibility: hidden;
+  color: #fff;
+  font-size: 14px;
+  background: #aa3000; 
+  padding: 3px 12px;
+  transition: 0.3s;
+  box-shadow:  0px 3px 5px #333;
+  margin-top: -40px;
+  margin-left: -50px;
+  border-radius: 4px;
+}
+
+
+.error-row img:hover + p {
+  opacity: 1;
+  visibility: visible;
+}
+
+
